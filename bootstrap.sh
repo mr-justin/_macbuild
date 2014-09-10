@@ -62,7 +62,7 @@ hdiutil unmount /Volumes/XQuartz-2.7.7
 
 cd ${HOME}
 
-git clone https://github.com/whiskykilo/macbuild
+git clone https://github.com/whiskykilo/_macbuild
 
 ###                   ###
 # Prep for installation #
