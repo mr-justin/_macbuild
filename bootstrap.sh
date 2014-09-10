@@ -30,7 +30,7 @@ sudo -v
 sudo mkdir -p /usr/local
 cd /usr/local
 sudo mkdir homebrew
-curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
+sudo curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 
 
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
