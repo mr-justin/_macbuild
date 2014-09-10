@@ -12,7 +12,7 @@
 echo "You are about to install a bazillion apps and make a bunch of changes..."
 echo "This will take a freaking eternity..."
 
-
+sudo -v
 ###         ###
 # Install Git #
 ###         ###
