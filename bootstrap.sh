@@ -27,9 +27,9 @@ echo "This will take a freaking eternity..."
 # Setup Homebrew #
 ###            ###
 
-mkdir -p /usr/local
+sudo mkdir -p /usr/local
 cd /usr/local
-mkdir homebrew
+sudo mkdir homebrew
 curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 
 
