@@ -16,7 +16,7 @@ echo "This will take a freaking eternity..."
 # Setup Homebrew #
 ###            ###
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+curl -sL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 brew doctor
