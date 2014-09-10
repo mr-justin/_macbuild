@@ -12,21 +12,32 @@
 echo "You are about to install a bazillion apps and make a bunch of changes..."
 echo "This will take a freaking eternity..."
 
+
+###         ###
+# Install Git #
+###         ###
+#cd /tmp
+#curl https://git-osx-installer.googlecode.com/files/git-1.8.4.2-intel-universal-snow-leopard.dmg > /tmp/git.dmg
+#hdiutil attach git.dmg
+#cd /Volumes/Git\ 1.8.4.2\ Snow\ Leopard\ Intel\ Universal/
+#sudo installer -pkg git-1.8.4.2-intel-universal-snow-leopard.pkg -target /
+#hdiutil unmount /Volumes/Git\ 1.8.4.2\ Snow\ Leopard\ Intel\ Universal/
+
 ###            ###
 # Setup Homebrew #
 ###            ###
 
-curl -sL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
+mkdir -p /usr/local
+cd /usr/local
+mkdir homebrew
+curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
+
+
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 brew doctor
 brew update
 
-###         ###
-# Install Git #
-###         ###
-
-brew install git
 
 ###               ###
 # Install Brew Cask #
@@ -39,6 +50,12 @@ brew install caskroom/cask/brew-cask
 ###          ###
 
 brew install wget
+
+###              ###
+# brew install git #
+###              ###
+
+brew install git
 
 ###             ###
 # Configure XCode #
