@@ -40,3 +40,5 @@ I am not responsible for the crap this will do to your computer.
     Virtualbox
     VMware Fusion
     ... and many more
+
+It also does a tremendous amount of changes to OS X. Finder configs, Spotlight, Dock, etc. Please review the code before running it on your primary machine.
