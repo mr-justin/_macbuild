@@ -102,3 +102,9 @@ cd ${HOME}
 mkdir -p .config/gtk-3.0
 echo "[Settings]" > .config/gtk-3.0/settings.ini
 echo "gtk-theme-name = Adwaita" >> .config/gtk-3.0/settings.ini
+
+###                             ###
+# Finalize Little Snitch Settings #
+###                             ###
+
+open /opt/homebrew-cask/Caskroom/little-snitch/3.3.4/Little Snitch Installer.app
