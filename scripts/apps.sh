@@ -44,6 +44,8 @@ brew install node
 brew install pixman
 brew install pkg-config
 brew install portaudio
+brew install rbenv
+brew install ruby-build
 brew install shellcheck
 brew install wget
 brew install xz

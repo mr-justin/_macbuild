@@ -92,17 +92,17 @@ git clone https://github.com/whiskykilo/_macbuild
 # Prep for installation #
 ###                   ###
 
-chmod a+x ${HOME}/macbuild/scripts/apps.sh
-chmod a+x ${HOME}/macbuild/scripts/osx.sh
+chmod a+x ${HOME}/_macbuild/scripts/apps.sh
+chmod a+x ${HOME}/_macbuild/scripts/osx.sh
 
 ###                   ###
 # Install Required Apps #
 ###                   ###
 
-source ${HOME}/macbuild/scripts/apps.sh
+source ${HOME}/_macbuild/scripts/apps.sh
 
 ###                   ###
 # Make all the changes! #
 ###                   ###
 
-source ${HOME}/macbuild/scripts/osx.sh
+source ${HOME}/_macbuild/scripts/osx.sh
