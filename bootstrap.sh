@@ -29,18 +29,13 @@ sudo -v
 
 sudo mkdir -p /usr/local
 cd /usr/local
-sudo mkdir homebrew
-
 sudo chown -R ${USER}:admin /usr/local
 sudo chmod -R 755 /usr/local
 
-curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
+curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C /usr/local
 
-pause
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
-pause
 source ~/.bash_profile
-pause
 brew doctor
 brew update
 
