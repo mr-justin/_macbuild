@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
-# Mac OS X dev
-#
-# This applies my personal preferred configurations for OS X.
+# Mac OS X Development Apps
 #
 # Wes Kennedy
 # wes.kennedy@gmail.com
-# https://github.com/whiskykilo/macbuild
+# https://github.com/whiskykilo/_macbuild
 #
 
 echo "Installing Packer"

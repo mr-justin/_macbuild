@@ -1,12 +1,10 @@
-#!/usr/bin/sh
+#!/usr/bin/env bash
 
-# Mac OS X bootstrap
-#
-# This applies my personal preferred configurations for OS X.
+# Mac OS X Bootstrap that mac
 #
 # Wes Kennedy
 # wes.kennedy@gmail.com
-# https://github.com/whiskykilo/macbuild
+# https://github.com/whiskykilo/_macbuild
 #
 
 echo "........................................................................."

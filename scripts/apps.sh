@@ -16,7 +16,6 @@ echo "Installing Brew Apps"
 brew install ack
 brew install ansible
 brew install atk
-brew install bash-completion
 brew install c-ares
 brew install ccache
 brew install d-bus
@@ -44,8 +43,6 @@ brew install node
 brew install pixman
 brew install pkg-config
 brew install portaudio
-brew install rbenv
-brew install ruby-build
 brew install shellcheck
 brew install wget
 brew install xz
