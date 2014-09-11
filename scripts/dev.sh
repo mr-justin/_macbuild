@@ -12,10 +12,12 @@
 brew tap homebrew/binary
 brew install packer
 
+mkdir -p ~/vms/packer
+cd ~/vms/packer
+git clone https://github.com/joefitzgerald/packer-windows.git
 ###           ###
 # Build OS X VM #
 ###           ###
 
-wget
-mkdir ~/src
-cp /Applications/Install\ OS\ X\ Mountain\ Lion.app/Contents/SharedSupport/InstallESD.dmg ~/src
+#wget
+#cp /Applications/Install\ OS\ X\ Mountain\ Lion.app/Contents/SharedSupport/InstallESD.dmg ~/vms/isos/
