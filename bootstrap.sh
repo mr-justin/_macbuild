@@ -9,8 +9,11 @@
 # https://github.com/whiskykilo/macbuild
 #
 
-echo "You are about to install a bazillion apps and make a bunch of changes..."
-echo "This will take a freaking eternity..."
+echo "........................................................................."
+echo ". You are about to install a bazillion apps and make a bunch of changes ."
+echo ". This will take a freaking eternity (over an hour)                     ."
+echo ". No really, I'm not kidding                                            ."
+echo "........................................................................."
 
 sudo -v
 
