@@ -34,6 +34,7 @@ do
   sleep 2
 done
 
+sleep 45
 ###            ###
 # Setup Homebrew #
 ###            ###
