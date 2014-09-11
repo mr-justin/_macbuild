@@ -27,7 +27,7 @@ sudo -v
 # Configure XCode #
 ###             ###
 
-xcode-select —install
+xcode-select —-install
 
 sleep 45
 
