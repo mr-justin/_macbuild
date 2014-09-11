@@ -30,9 +30,9 @@ sudo -v
 sudo mkdir -p /usr/local
 cd /usr/local
 sudo mkdir homebrew
-sudo curl -L https://github.com/Homebrew/homebrew/tarball/master | sudo tar xz --strip 1 -C homebrew
+curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 
-
+pause
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 brew doctor
