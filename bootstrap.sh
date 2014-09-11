@@ -29,7 +29,7 @@ sudo -v
 
 xcode-select --install
 
-sleep 45
+sleep 90
 
 ###            ###
 # Setup Homebrew #
