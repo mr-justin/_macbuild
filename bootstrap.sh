@@ -106,3 +106,9 @@ source ${HOME}/_macbuild/scripts/apps.sh
 ###                   ###
 
 source ${HOME}/_macbuild/scripts/osx.sh
+
+###                   ###
+# Build dev environment #
+###                   ###
+
+source ${HOME}/_macbuild/scripts/dev.sh

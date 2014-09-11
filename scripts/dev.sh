@@ -11,10 +11,10 @@
 
 brew tap homebrew/binary
 brew install packer
-
-mkdir -p ~/vms/packer
-cd ~/vms/packer
+mkdir -p ~/dev/packer
+cd ~/dev/packer
 git clone https://github.com/joefitzgerald/packer-windows.git
+
 ###           ###
 # Build OS X VM #
 ###           ###
