@@ -23,6 +23,14 @@ sudo -v
 #sudo installer -pkg git-1.8.4.2-intel-universal-snow-leopard.pkg -target /
 #hdiutil unmount /Volumes/Git\ 1.8.4.2\ Snow\ Leopard\ Intel\ Universal/
 
+###             ###
+# Configure XCode #
+###             ###
+
+xcode-select —install
+
+sleep 45
+
 ###            ###
 # Setup Homebrew #
 ###            ###
@@ -57,12 +65,6 @@ brew install wget
 ###              ###
 
 brew install git
-
-###             ###
-# Configure XCode #
-###             ###
-
-xcode-select —install
 
 ###     ###
 # XQuartz #
