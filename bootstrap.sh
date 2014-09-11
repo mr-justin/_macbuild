@@ -29,7 +29,10 @@ sudo -v
 
 xcode-select --install
 
-sleep 130
+while [ ! -d /Library/Developer/CommandLineTools ]
+do
+  sleep 2
+done
 
 ###     ###
 # XQuartz #
