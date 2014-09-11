@@ -29,7 +29,7 @@ sudo -v
 
 xcode-select --install
 
-sleep 105
+sleep 130
 
 ###     ###
 # XQuartz #
