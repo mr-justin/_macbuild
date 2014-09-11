@@ -13,15 +13,15 @@ echo "You are about to install a bazillion apps and make a bunch of changes..."
 echo "This will take a freaking eternity..."
 
 sudo -v
-###         ###
-# Install Git #
-###         ###
-#cd /tmp
-#curl https://git-osx-installer.googlecode.com/files/git-1.8.4.2-intel-universal-snow-leopard.dmg > /tmp/git.dmg
-#hdiutil attach git.dmg
-#cd /Volumes/Git\ 1.8.4.2\ Snow\ Leopard\ Intel\ Universal/
-#sudo installer -pkg git-1.8.4.2-intel-universal-snow-leopard.pkg -target /
-#hdiutil unmount /Volumes/Git\ 1.8.4.2\ Snow\ Leopard\ Intel\ Universal/
+
+###                           ###
+# Put default dotfiles in place #
+###                           ###
+
+rm ${HOME}/.bash_profile
+cp ${HOME}/_macbuild/dotfiles/.bash_profile ${HOME}/
+mkdir ${HOME}/.ssh
+cp ${HOME}/_macbuild/dotfiles/ssh/config ${HOME}/.ssh/
 
 ###             ###
 # Configure XCode #

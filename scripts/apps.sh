@@ -58,29 +58,28 @@ brew install xz
 # Brew Cask Apps #
 ###            ###
 
-brew cask install caffeine
-brew cask install dropbox
-brew cask install one-password
-brew cask install iterm2
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install istat-menus
-brew cask install google-chrome
-brew cask install Skype
-brew cask install bittorrent-sync
-brew cask install crashplan
-brew cask install evernote
+
+brew cask install airmail-amt
 brew cask install atom
 brew cask install bartender
+brew cask install bittorrent-sync
+brew cask install caffeine
 brew cask install carbon-copy-cloner
-brew cask install gimp
+brew cask install crashplan
+brew cask install dropbox
+brew cask install evernote
+brew cask install flux
+brew cask install google-chrome
 brew cask install hipchat
+brew cask install istat-menus
+brew cask install iterm2
 brew cask install little-snitch
 brew cask install macvim
+brew cask install onepassword
 brew cask install spotify
-brew cask install flux
+brew cask install vagrant
+brew cask install virtualbox
 brew cask install vmware-fusion
-brew cask install airmail-amt
 
 ###            ###
 # Install Jekyll #

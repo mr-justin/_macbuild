@@ -1,0 +1,4 @@
+ForwardX11 = yes
+ForwardAgent = yes
+ServerAliveInterval 900
+ForwardX11Trusted yes
