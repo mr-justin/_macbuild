@@ -80,13 +80,6 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vmware-fusion
 
-echo "Now let's install Jekyll"
-###            ###
-# Install Jekyll #
-###            ###
-
-gem install jekyll
-
 echo "Time to install Wireshark with GTK3"
 ###                 ###
 # Wireshark with GTK3 #
