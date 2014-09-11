@@ -9,6 +9,8 @@
 # https://github.com/whiskykilo/macbuild
 #
 
+echo "Installing Packer"
+
 brew tap homebrew/binary
 brew install packer
 mkdir -p ~/dev/packer

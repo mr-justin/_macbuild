@@ -8,7 +8,7 @@
 # wes.kennedy@gmail.com
 # https://github.com/whiskykilo/macbuild
 #
-
+echo "Installing Brew Apps"
 ###       ###
 # Brew Apps #
 ###       ###
@@ -53,13 +53,12 @@ brew install xz
 
 
 
-
+echo "Installing Brew Cask Apps"
 ###            ###
 # Brew Cask Apps #
 ###            ###
 
 
-brew cask install airmail-amt
 brew cask install atom
 brew cask install bartender
 brew cask install bittorrent-sync
@@ -81,12 +80,14 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vmware-fusion
 
+echo "Now let's install Jekyll"
 ###            ###
 # Install Jekyll #
 ###            ###
 
 gem install jekyll
 
+echo "Time to install Wireshark with GTK3"
 ###                 ###
 # Wireshark with GTK3 #
 ###                 ###
@@ -107,4 +108,6 @@ echo "gtk-theme-name = Adwaita" >> .config/gtk-3.0/settings.ini
 # Finalize Little Snitch Settings #
 ###                             ###
 
-open /opt/homebrew-cask/Caskroom/little-snitch/3.3.4/Little Snitch Installer.app
+# open /opt/homebrew-cask/Caskroom/little-snitch/3.3.4/Little Snitch Installer.app
+
+# cp ${HOME}/_macbuild/reqs/littlesnitch/configuration.xpl /Library/Application\ Support/Objective\ Development/Little\ Snitch/configuration.xpl
