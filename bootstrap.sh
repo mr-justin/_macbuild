@@ -29,9 +29,11 @@ sudo -v
 
 sudo mkdir -p /usr/local
 cd /usr/local
-sudo chown ${USER}:admin /usr/local
-sudo chmod -R 755 /usr/local
 sudo mkdir homebrew
+
+sudo chown -R ${USER}:admin /usr/local
+sudo chmod -R 755 /usr/local
+
 curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 
 pause
