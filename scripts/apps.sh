@@ -8,6 +8,7 @@
 # wes.kennedy@gmail.com
 # https://github.com/whiskykilo/macbuild
 #
+
 echo "Installing Brew Apps"
 ###       ###
 # Brew Apps #
@@ -46,14 +47,10 @@ brew install shellcheck
 brew install wget
 brew install xz
 
-
-
-
 echo "Installing Brew Cask Apps"
 ###            ###
 # Brew Cask Apps #
 ###            ###
-
 
 brew cask install atom
 brew cask install bartender
@@ -81,17 +78,7 @@ echo "Time to install Wireshark with GTK3"
 # Wireshark with GTK3 #
 ###                 ###
 
-cd $(brew --repository)
-hub pull https://github.com/rbalint/homebrew-gtk-quartz
-
-brew link --overwrite gsettings-desktop-schemas
-brew install --build-from-source at-spi2-core at-spi2-atk cairo harfbuzz pango gtk+3 gtk+ librsvg gnome-themes-standard wireshark --without-x --without-x11 --with-gtk+3
-
-cd ${HOME}
-
-mkdir -p .config/gtk-3.0
-echo "[Settings]" > .config/gtk-3.0/settings.ini
-echo "gtk-theme-name = Adwaita" >> .config/gtk-3.0/settings.ini
+source ../plugins.d/wireshark.sh
 
 ###            ###
 # GitHub for Mac #
@@ -101,10 +88,12 @@ source ../plugins.d/githubmac.sh
 
 ###             ###
 # Bash Completion #
+###             ###
+
+source ../plugins.d/bash-completion.sh
+
 ###                             ###
 # Finalize Little Snitch Settings #
 ###                             ###
 
-# open /opt/homebrew-cask/Caskroom/little-snitch/3.3.4/Little Snitch Installer.app
-
-# cp ${HOME}/_macbuild/reqs/littlesnitch/configuration.xpl /Library/Application\ Support/Objective\ Development/Little\ Snitch/configuration.xpl
+source ../plugins.d/littlesnitch.sh
