@@ -29,7 +29,6 @@ brew install gmp
 brew install gnutls
 brew install gsettings-desktop-schemas
 brew install hicolor-icon-theme
-brew install hub
 brew install icu4c
 brew install libffi
 brew install libgcrypt
@@ -94,6 +93,14 @@ mkdir -p .config/gtk-3.0
 echo "[Settings]" > .config/gtk-3.0/settings.ini
 echo "gtk-theme-name = Adwaita" >> .config/gtk-3.0/settings.ini
 
+###            ###
+# GitHub for Mac #
+###            ###
+
+source ../plugins.d/githubmac.sh
+
+###             ###
+# Bash Completion #
 ###                             ###
 # Finalize Little Snitch Settings #
 ###                             ###
