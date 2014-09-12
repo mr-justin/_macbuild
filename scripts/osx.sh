@@ -245,6 +245,7 @@ echo "Configuring the Dock to not suck."
 defaults write com.apple.dock pinning -string end
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -integer 24
+defaults write com.apple.dock orientation -string right
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.15
