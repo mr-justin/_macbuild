@@ -13,5 +13,5 @@ cd /tmp
 
 wget https://www.dropbox.com/s/stivzz3ikmlsb46/SW_DVD5_Office_Mac_Standard_2011w_SP1_English_MLF_X17-46470.ISO?dl=0
 hdiutil attach ISOname.iso
-sudo installer -pkg /Volumes/XQuartz-2.7.7/XQuartz.pkg -target /
-hdiutil unmount /Volumes/XQuartz-2.7.7
+sudo installer -pkg /Volumes/ISOLocation/ -target /
+hdiutil unmount /Volumes/ISOLocation
