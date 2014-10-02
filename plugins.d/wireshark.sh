@@ -1,6 +1,12 @@
 ###                 ###
 # Wireshark with GTK3 #
 ###                 ###
+
+echo "........................................................................."
+echo ". We're gonna make a pretty version of Wireshark. The regular version   ."
+echo ". looks like it belongs on a Windows machine.                           ."
+echo "........................................................................."
+
 brew install hub
 cd $(brew --repository)
 hub pull https://github.com/rbalint/homebrew-gtk-quartz

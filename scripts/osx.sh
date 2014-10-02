@@ -9,7 +9,8 @@
 # https://github.com/whiskykilo/macbuild
 #
 
-echo "These are Wes Kennedy's preferred Mac OS X settings. This will totally reconfigure a new Mac with my preferred settings."
+echo "These are Wes Kennedy's preferred Mac OS X settings."
+echo "This will totally reconfigure a new Mac with my preferred settings."
 
 echo "Please enter the computer name that you would like to use:"
 read compname
@@ -19,6 +20,15 @@ sudo -v
 
 # Update existing `sudo` timestamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+###                          ###
+# Check for bash vulnerability #
+###                          ###
+echo "Now checking for the Shell Shock bash vulnerability."
+
+#TODO Insert check for vulnerability
+#TODO If exists, then patch
 
 ###           ###
 # Computer Name #
@@ -203,6 +213,8 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0.1
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
+
+#TODO: Install PlistBuddy
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
