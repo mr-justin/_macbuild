@@ -11,7 +11,7 @@
 #                    Choose the apps you want to install                       #
 ################################################################################
 
-brewApps (
+brewApps=(
   ack
   ansible
   atk
@@ -47,7 +47,7 @@ brewApps (
   xz
 )
 
-brewCaskApps (
+brewCaskApps=(
   atom
   bartender
   bittorrent-sync
