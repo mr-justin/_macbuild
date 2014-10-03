@@ -182,9 +182,9 @@ echo "........................................................................."
 # Install misc apps                                                            #
 ################################################################################
 
-source ../plugins.d/xquartz.sh
-source ../plugins.d/wireshark.sh
-source ../plugins.d/githubmac.sh
+source ${HOME}/_macbuild/plugins.d/xquartz.sh
+source ${HOME}/_macbuild/plugins.d/wireshark.sh
+source ${HOME}/_macbuild/plugins.d/githubmac.sh
 
 chmod a+x ${HOME}/_macbuild/scripts/osx.sh
 
