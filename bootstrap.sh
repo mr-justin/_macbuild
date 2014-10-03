@@ -76,7 +76,7 @@ echo ". This will take a freaking eternity (over an hour)                     ."
 echo ". No really, I'm not kidding                                            ."
 echo "........................................................................."
 
-echo "Gotta get your admin creds, just this time, I swear."
+echo "Gotta get your admin creds, just this time, I swear. Well, and one more time later..."
 
 sudo -v
 
@@ -160,6 +160,8 @@ echo "Pulling down the most recent _macbuild repo"
 cd ${HOME}
 
 git clone https://github.com/whiskykilo/_macbuild
+
+cd _macbuild
 
 echo "........................................................................."
 
